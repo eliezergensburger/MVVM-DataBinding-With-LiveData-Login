@@ -144,9 +144,10 @@ public class LoginUser {
 ### **Step2:** Create a new class for the ViewModel(LoginViewModel):
 
 ```Java
+```Java
 
-import android.arch.lifecycle.MutableLiveData;
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
 import android.view.View;
 
 public class LoginViewModel extends ViewModel {
@@ -180,13 +181,14 @@ public class LoginViewModel extends ViewModel {
 ### **Step3:** The View class(MainActivity):
 
 ```Java
+```Java
 
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
-import android.databinding.DataBindingUtil;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
+import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -243,6 +245,7 @@ public class MainActivity extends AppCompatActivity {
 ### **Finally:** The XML File: (Important Changes Here)
 
 ```xml
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -251,7 +254,7 @@ public class MainActivity extends AppCompatActivity {
     <data>
         <variable
             name="LoginViewModel"
-            type="com.example.umangburman.databindingwithlivedata.ViewModel.LoginViewModel" />
+            type="com.example.umangburman.databindingwithlivedata.viemodel.LoginViewModel" />
     </data>
 
     <android.support.v4.widget.NestedScrollView

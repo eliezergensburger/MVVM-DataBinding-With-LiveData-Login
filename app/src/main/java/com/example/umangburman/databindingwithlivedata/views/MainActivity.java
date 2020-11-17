@@ -1,16 +1,17 @@
-package com.example.umangburman.databindingwithlivedata.View;
+package com.example.umangburman.databindingwithlivedata.views;
 
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
-import android.databinding.DataBindingUtil;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelProviders;
+import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;
 
-import com.example.umangburman.databindingwithlivedata.Model.LoginUser;
+import com.example.umangburman.databindingwithlivedata.model.LoginUser;
 import com.example.umangburman.databindingwithlivedata.R;
-import com.example.umangburman.databindingwithlivedata.ViewModel.LoginViewModel;
+import com.example.umangburman.databindingwithlivedata.viemodel.LoginViewModel;
 import com.example.umangburman.databindingwithlivedata.databinding.ActivityMainBinding;
 
 import java.util.Objects;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        loginViewModel = ViewModelProviders.of(this).get(LoginViewModel.class);
+        loginViewModel =  new ViewModelProvider(this).get(LoginViewModel.class);
 
         binding = DataBindingUtil.setContentView(MainActivity.this, R.layout.activity_main);
 
@@ -57,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
                     binding.lblEmailAnswer.setText(loginUser.getStrEmailAddress());
                     binding.lblPasswordAnswer.setText(loginUser.getStrPassword());
                 }
-
             }
         });
 

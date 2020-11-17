@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DataBinding With LiveData</string>
+    <string name="Example_Tittle">Login Example Using MVVM, DataBinding with LiveData</string>
 </resources>

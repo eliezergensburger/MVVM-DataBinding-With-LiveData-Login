@@ -1,10 +1,10 @@
-package com.example.umangburman.databindingwithlivedata.ViewModel;
+package com.example.umangburman.databindingwithlivedata.viemodel;
 
-import android.arch.lifecycle.MutableLiveData;
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
 import android.view.View;
 
-import com.example.umangburman.databindingwithlivedata.Model.LoginUser;
+import com.example.umangburman.databindingwithlivedata.model.LoginUser;
 
 public class LoginViewModel extends ViewModel {
 
