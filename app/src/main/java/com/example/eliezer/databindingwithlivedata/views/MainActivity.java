@@ -1,19 +1,17 @@
-package com.example.umangburman.databindingwithlivedata.views;
+package com.example.eliezer.databindingwithlivedata.views;
 
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.ViewModelProviders;
 import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;
 
-import com.example.umangburman.databindingwithlivedata.model.LoginUser;
-import com.example.umangburman.databindingwithlivedata.R;
-import com.example.umangburman.databindingwithlivedata.viemodel.LoginViewModel;
-import com.example.umangburman.databindingwithlivedata.databinding.ActivityMainBinding;
-
+import com.example.eliezer.databindingwithlivedata.databinding.ActivityMainBinding;
+import com.example.eliezer.databindingwithlivedata.model.LoginUser;
+import com.example.eliezer.databindingwithlivedata.R;
+import com.example.eliezer.databindingwithlivedata.viemodel.LoginViewModel;
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {

@@ -246,6 +246,8 @@ public class MainActivity extends AppCompatActivity {
 
 ```xml
 ```xml
+```xml
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -254,7 +256,7 @@ public class MainActivity extends AppCompatActivity {
     <data>
         <variable
             name="LoginViewModel"
-            type="com.example.umangburman.databindingwithlivedata.viemodel.LoginViewModel" />
+            type="com.example.eliezer.databindingwithlivedata.viemodel.LoginViewModel" />
     </data>
 
     <android.support.v4.widget.NestedScrollView

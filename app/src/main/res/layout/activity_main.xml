@@ -6,7 +6,7 @@
     <data>
         <variable
             name="LoginViewModel"
-            type="com.example.umangburman.databindingwithlivedata.viemodel.LoginViewModel" />
+            type="com.example.eliezer.databindingwithlivedata.viemodel.LoginViewModel" />
     </data>
        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

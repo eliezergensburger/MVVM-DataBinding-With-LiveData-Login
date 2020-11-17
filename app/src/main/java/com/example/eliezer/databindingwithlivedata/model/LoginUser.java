@@ -1,4 +1,4 @@
-package com.example.umangburman.databindingwithlivedata.model;
+package com.example.eliezer.databindingwithlivedata.model;
 
 import android.util.Patterns;
 
