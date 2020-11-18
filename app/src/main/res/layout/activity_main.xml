@@ -37,7 +37,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:ems="10"
-                android:hint="E-Mail Address"
+                android:hint="@string/e_mail_address_hint"
                 android:inputType="textEmailAddress"
                 android:text="@={LoginViewModel.EmailAddress}"
                 app:layout_constraintEnd_toEndOf="parent"
